@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title> Bent Creek Ceramics - Newsletter</title>
+            <style>
+            @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
+            </style>
+    </head>    
+
+    <body>     
+        <header>
+            <logo>
+                <img class="logo_pic" src="images/optimized/bent-creek-logo.png">
+            </logo>
+            <nav>
+                <a href="index.html"> Home </a>
+                <a href="about.html"> About </a>
+                <a href="newsletter.html" class="active"> Newsletter </a>
+            </nav>
+        </header>
+
+        <section id="news_background"> 
+            <content class="content_news"> 
+                <h1 id="header_news">Sign Up for our Weekly Newsletter</h1>
+                <h2 id="header2_news">Stay up to date with events, activities, news and specials."</h2>
+                <form>
+                    <input id="nameInput" type="text" name="name" placeholder="Name">
+                    <input id="emailInput" type="email" name="email" placeholder="Email">
+                    <button id="signupButton" type="submit"> Submit </button>
+                </form>
+            </content> 
+        </section> 
+
+        <!--This is from the Bonus section on Newline -->
+        <script type="text/javascript">
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var signupButton = document.getElementById('signupButton');
+  signupButton.addEventListener('click', function(e) {
+    var nameVal = nameInput.value;
+    var emailVal = emailInput.value;
+    if (nameVal && emailVal) {
+      alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+      nameInput.value = "";
+      emailInput.value = "";
+    } else {
+      alert('We would love for you to sign up, please provide both your name and email address.');
+    }
+  });
+</script>
+<!--end bonus section  -->
+
+    </body>
+</html>
+
